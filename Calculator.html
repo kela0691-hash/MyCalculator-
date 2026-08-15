@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet"  href="Calculator.css">
+    <body>
+      <div id="d">
+      <h1> CALCULATOR APP </h1>
+      <input placeholder="000" id="display" readonly>
+      <div class="buttons">
+      <button class="op" id="clear" onclick="clearall()"><strong>C</strong></button>
+      <button  class="op" id="back"onclick="deletelast()">⌫ </button>
+      <button  class="op" onclick="percentage ()">%</button>
+      <button  class="op" id="divide"onclick="addValue('/')">÷</button>
+      <button class="numeric" onclick="addValue('1')">1</button>
+      <button  class="numeric" onclick="addValue('2')">2</button>
+      <button  class="numeric" onclick="addValue('3')">3</button>
+      <button class="op"  id="plus"onclick="addValue('+')">+</button>
+      <button  class="numeric"  onclick="addValue('4')">4</button>
+      <button   class="numeric" onclick="addValue('5')">5</button>
+      <button   class="numeric" onclick="addValue('6')">6</button>
+      <button class="op"  id="minus" onclick="addValue('-')">-</button>
+      <button   class="numeric" onclick="addValue('7')">7</button>
+      <button  class="numeric"  onclick="addValue('8')">8</button>
+      <button   class="numeric" onclick="addValue('9')">9</button>
+      <button  class="op" id="into" onclick="addValue('*')">× </button>
+      <button  class="point" onclick="addValue('.')">.</button>
+      <button  class="numeric"  onclick="addValue('0')">0</button>
+      <button class="point"  onclick="square()">x²   </button>
+      <button  id="equalto"onclick="calculate()">=</button>
+      </div>
+      </div>
+      <script src="Calculator.js"</script>
+    </body>
+  </head>
+</html>
